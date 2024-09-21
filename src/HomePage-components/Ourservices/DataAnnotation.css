@@ -1,0 +1,127 @@
+/* DataAnnotation.css */
+
+.data-annotation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .data-annotation-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .annotation-image {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .annotation-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .annotation-text {
+    flex: 1 1 100%;
+    padding: 20px;
+    text-align: justify;
+  }
+  
+  .annotation-text-content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .types-annotation {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .annotation-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .annotation-options button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+  }
+  
+  .annotation-options button:hover {
+    background-color: #0056b3;
+  }
+  
+  .annotation-info {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .annotation-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .annotation-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .active {
+    border: 2px solid #007bff;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+  }
+  
+  /* Media Queries */
+  
+  @media (min-width: 768px) {
+    .data-annotation-content {
+      flex-direction: row;
+    }
+  
+    .annotation-image, .annotation-text {
+      flex: 1;
+    }
+  
+    .annotation-options {
+      justify-content: space-around;
+    }
+  
+    .annotation-info {
+      padding: 0;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .data-annotation-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .annotation-image, .annotation-text {
+      flex: 1;
+      padding: 20px;
+    }
+  }
+  

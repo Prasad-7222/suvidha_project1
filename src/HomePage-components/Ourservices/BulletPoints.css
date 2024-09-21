@@ -1,0 +1,38 @@
+.bullet-points {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bullet-point {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 90%;
+  max-width: 800px;
+}
+
+.bullet-point:hover {
+  transform: translateX(10px);
+  background-color: #e1e4e8;
+}
+
+.green-tick {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .bullet-points {
+    align-items: flex-start;
+    padding-left: 100px;
+  }
+}

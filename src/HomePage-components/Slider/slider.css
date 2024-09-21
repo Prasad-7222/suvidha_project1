@@ -1,0 +1,63 @@
+/* SliderComponent.css */
+
+/* General styles */
+.slider-container {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Set width to 100% of its parent container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.slider {
+  margin-top: 80px;
+
+    display: flex;
+    /* overflow: hidden; Ensure only one image is visible at a time */
+    transition: transform 1s ease-in-out;
+}
+
+
+.sliderimage {
+  width: 100%; /* Ensure images take the full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: fill;
+}
+
+.arrow {
+  height: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+}
+
+.right {
+  right: 10px;
+}
+
+.left {
+  left: 10px;
+  z-index: 1;
+  transform: rotate(180deg);
+}
+
+
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .arrow {
+      height: 40px; /* Adjust arrow size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .arrow {
+      height: 30px; /* Adjust arrow size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .arrow {
+      height: 20px; /* Adjust arrow size for mobile devices */
+  }
+}

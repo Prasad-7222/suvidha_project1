@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: 'Titillium Web', sans-serif;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+}
+
+.blog-header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.blog-header p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+.image-text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-text-section .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.image-container1 {
+  width: 100%;
+  max-width: 400px;
+}
+
+.image-container1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-container {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.text-container h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.text-container p {
+  margin: 10px 0 0;
+  color: #666;
+}
+
+.use-cases-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.use-cases-section .left-column,
+.use-cases-section .right-column {
+  width: 100%;
+  max-width: 800px;
+}
+
+.use-cases-section .left-column {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.use-cases-section .left-column h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.use-cases-section .right-column .annotation {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.use-cases-section .right-column .annotation h3 {
+  margin: 0 0 10px;
+  font-size: 1.25rem;
+}
+
+.use-cases-section .right-column .annotation p {
+  margin: 0;
+  color: #666;
+}
+
+@media (min-width: 768px) {
+  .image-text-section .content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .image-container1 {
+    margin-right: 20px;
+  }
+
+  .use-cases-section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .use-cases-section .left-column,
+  .use-cases-section .right-column {
+    width: 48%;
+  }
+}

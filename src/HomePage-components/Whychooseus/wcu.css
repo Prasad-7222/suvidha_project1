@@ -1,0 +1,234 @@
+/* Base styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.clients {
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #d2d5dc;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.client-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.client-logos a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;  /* Fixed width for logo boxes */
+    height: 100px;  /* Fixed height for logo boxes */
+    border-radius: 10px;
+    overflow: hidden;  /* Ensures that images fit within the boxes */
+    transition: transform 0.3s ease;
+    background-color: #fff; /* Optional: background color for the boxes */
+}
+
+.client-logos img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* Ensures images maintain aspect ratio */
+}
+
+.client-logos a:hover {
+    transform: scale(1.1);
+}
+
+.why-choose-us {
+    position: relative;
+    overflow: hidden;
+    color: rgb(15, 15, 15);
+    border-radius: 10px;
+    width: 100%;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 400px;
+    background-color: rgb(197, 197, 200);
+    background-image: url('images/uu.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+}
+
+.image {
+    width: 40%;
+    max-width: 400px;
+    margin-right: 20px;
+}
+
+.image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 60%;
+    text-align: left;
+}
+
+.text-content h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.text-content h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.section p {
+    color: #080808;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .why-choose-us {
+        padding: 50px 20px; /* Adjusted padding for smaller screens */
+    }
+    .text-content {
+        max-width: 70%;
+    }
+    .image {
+        width: 40%;
+    }
+    .text-content h1 {
+        font-size: 26px;
+    }
+    .text-content h3 {
+        font-size: 18px;
+    }
+    .section p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .why-choose-us {
+        padding: 40px 20px; /* Further adjusted padding for smaller screens */
+    }
+    .text-content {
+        max-width: 80%;
+    }
+    .image {
+        width: 50%;
+    }
+    .text-content h1 {
+        font-size: 24px;
+    }
+    .text-content h3 {
+        font-size: 17px;
+    }
+    .section p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .why-choose-us {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px; /* Adjusted padding for smaller screens */
+        min-height: auto;
+    }
+    .image {
+        width: 70%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .text-content {
+        max-width: 100%;
+        margin-left: auto;
+        text-align: center;
+    }
+    .text-content h1 {
+        font-size: 24px;
+    }
+    .text-content h3 {
+        font-size: 18px;
+    }
+    .section p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .why-choose-us {
+        padding: 20px 10px; /* Adjusted padding for smaller screens */
+    }
+    .text-content h1 {
+        font-size: 20px;
+    }
+    .text-content h3 {
+        font-size: 16px;
+    }
+    .section p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .why-choose-us {
+        padding: 15px 10px; /* Adjusted padding for smaller screens */
+    }
+    .text-content h1 {
+        font-size: 18px;
+    }
+    .text-content h3 {
+        font-size: 14px;
+    }
+    .section p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 360px) {
+    .why-choose-us {
+        padding: 10px 5px; /* Adjusted padding for very small screens */
+    }
+    .text-content h1 {
+        font-size: 16px;
+    }
+    .text-content h3 {
+        font-size: 13px;
+    }
+    .section p {
+        font-size: 10px;
+    }
+}
